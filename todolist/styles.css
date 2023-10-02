@@ -1,0 +1,163 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling with background gradient */
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgb(98, 147, 161), rgb(45, 102, 182));
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the body height to 100% of the viewport height */
+    margin: 0; /* Remove default margin */
+    padding: 0;
+}
+
+/* Container styling with shadow */
+.container {
+    width: 600px;
+    /* margin: 20px auto; */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: -20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input container styling */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+input[type="text"], input[type="date"] {
+    flex-grow: 1;
+    padding: 10px;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+
+/* Add button styling with gradient */
+#add-task-btn {
+    background: linear-gradient(180deg, #007bff 0%, #0056b3 100%);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#add-task-btn:hover {
+    background: linear-gradient(180deg, #0056b3 0%, #003d80 100%);
+}
+
+/* Filter container styling */
+.filter-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+    margin-right: 10px;
+    color: #333;
+}
+
+/* Select box styling */
+select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Task list styling with shadow */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Task item styling with gradient */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: black;
+    background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background 0.3s ease;
+}
+
+/* Completed task item styling with background color */
+li.completed {
+    background-color: #d3f0cd;
+    text-decoration: line-through;
+}
+
+/* Buttons within task items styling with gradient */
+button {
+    background: linear-gradient(180deg, #dc3545 0%, #c82333 100%);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(180deg, #c82333 0%, #a61f2d 100%);
+}
+
+/* Undo and redo buttons styling with gradient */
+.undo-redo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#undo-btn, #redo-btn {
+    background: linear-gradient(180deg, #6c757d 0%, #5a6268 100%);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#undo-btn:hover, #redo-btn:hover {
+    background: linear-gradient(180deg, #5a6268 0%, #4b5256 100%);
+}
